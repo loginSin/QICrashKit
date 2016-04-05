@@ -13,13 +13,13 @@
 		BD7FC6291CAE478A003CFF5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7FC6271CAE478A003CFF5B /* Main.storyboard */; };
 		BD7FC62B1CAE478A003CFF5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7FC62A1CAE478A003CFF5B /* Assets.xcassets */; };
 		BD7FC62E1CAE478A003CFF5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7FC62C1CAE478A003CFF5B /* LaunchScreen.storyboard */; };
-		BD7FC6371CAE47A9003CFF5B /* QIFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7FC6361CAE47A9003CFF5B /* QIFileWriter.m */; };
-		BD7FC63A1CAE7448003CFF5B /* QICrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7FC6391CAE7448003CFF5B /* QICrashHandle.m */; };
-		BD7FC63D1CAE745E003CFF5B /* QIErrorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7FC63C1CAE745E003CFF5B /* QIErrorHandle.m */; };
-		BD7FC6401CAE74CD003CFF5B /* QIDebugHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7FC63F1CAE74CD003CFF5B /* QIDebugHandle.m */; };
-		BD7FC6431CAE80CF003CFF5B /* QIDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7FC6421CAE80CF003CFF5B /* QIDeviceInfo.m */; };
-		BD7FC6461CAE908E003CFF5B /* QIReleaseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7FC6451CAE908E003CFF5B /* QIReleaseHandle.m */; };
-		BD7FC6491CAE909B003CFF5B /* QIInfoHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7FC6481CAE909B003CFF5B /* QIInfoHandle.m */; };
+		BDDB21631CB3BEE3005DB294 /* QICrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21561CB3BEE3005DB294 /* QICrashHandle.m */; };
+		BDDB21641CB3BEE3005DB294 /* QIDebugHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21581CB3BEE3005DB294 /* QIDebugHandle.m */; };
+		BDDB21651CB3BEE3005DB294 /* QIDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB215A1CB3BEE3005DB294 /* QIDeviceInfo.m */; };
+		BDDB21661CB3BEE3005DB294 /* QIErrorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB215C1CB3BEE3005DB294 /* QIErrorHandle.m */; };
+		BDDB21671CB3BEE3005DB294 /* QIFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB215E1CB3BEE3005DB294 /* QIFileWriter.m */; };
+		BDDB21681CB3BEE3005DB294 /* QIInfoHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21601CB3BEE3005DB294 /* QIInfoHandle.m */; };
+		BDDB21691CB3BEE3005DB294 /* QIReleaseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21621CB3BEE3005DB294 /* QIReleaseHandle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,20 +33,20 @@
 		BD7FC62A1CAE478A003CFF5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7FC62D1CAE478A003CFF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD7FC62F1CAE478A003CFF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD7FC6351CAE47A9003CFF5B /* QIFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIFileWriter.h; sourceTree = "<group>"; };
-		BD7FC6361CAE47A9003CFF5B /* QIFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIFileWriter.m; sourceTree = "<group>"; };
-		BD7FC6381CAE7448003CFF5B /* QICrashHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICrashHandle.h; sourceTree = "<group>"; };
-		BD7FC6391CAE7448003CFF5B /* QICrashHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICrashHandle.m; sourceTree = "<group>"; };
-		BD7FC63B1CAE745E003CFF5B /* QIErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIErrorHandle.h; sourceTree = "<group>"; };
-		BD7FC63C1CAE745E003CFF5B /* QIErrorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIErrorHandle.m; sourceTree = "<group>"; };
-		BD7FC63E1CAE74CD003CFF5B /* QIDebugHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIDebugHandle.h; sourceTree = "<group>"; };
-		BD7FC63F1CAE74CD003CFF5B /* QIDebugHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIDebugHandle.m; sourceTree = "<group>"; };
-		BD7FC6411CAE80CF003CFF5B /* QIDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIDeviceInfo.h; sourceTree = "<group>"; };
-		BD7FC6421CAE80CF003CFF5B /* QIDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIDeviceInfo.m; sourceTree = "<group>"; };
-		BD7FC6441CAE908E003CFF5B /* QIReleaseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIReleaseHandle.h; sourceTree = "<group>"; };
-		BD7FC6451CAE908E003CFF5B /* QIReleaseHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIReleaseHandle.m; sourceTree = "<group>"; };
-		BD7FC6471CAE909B003CFF5B /* QIInfoHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIInfoHandle.h; sourceTree = "<group>"; };
-		BD7FC6481CAE909B003CFF5B /* QIInfoHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIInfoHandle.m; sourceTree = "<group>"; };
+		BDDB21551CB3BEE3005DB294 /* QICrashHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICrashHandle.h; sourceTree = "<group>"; };
+		BDDB21561CB3BEE3005DB294 /* QICrashHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICrashHandle.m; sourceTree = "<group>"; };
+		BDDB21571CB3BEE3005DB294 /* QIDebugHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIDebugHandle.h; sourceTree = "<group>"; };
+		BDDB21581CB3BEE3005DB294 /* QIDebugHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIDebugHandle.m; sourceTree = "<group>"; };
+		BDDB21591CB3BEE3005DB294 /* QIDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIDeviceInfo.h; sourceTree = "<group>"; };
+		BDDB215A1CB3BEE3005DB294 /* QIDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIDeviceInfo.m; sourceTree = "<group>"; };
+		BDDB215B1CB3BEE3005DB294 /* QIErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIErrorHandle.h; sourceTree = "<group>"; };
+		BDDB215C1CB3BEE3005DB294 /* QIErrorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIErrorHandle.m; sourceTree = "<group>"; };
+		BDDB215D1CB3BEE3005DB294 /* QIFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIFileWriter.h; sourceTree = "<group>"; };
+		BDDB215E1CB3BEE3005DB294 /* QIFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIFileWriter.m; sourceTree = "<group>"; };
+		BDDB215F1CB3BEE3005DB294 /* QIInfoHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIInfoHandle.h; sourceTree = "<group>"; };
+		BDDB21601CB3BEE3005DB294 /* QIInfoHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIInfoHandle.m; sourceTree = "<group>"; };
+		BDDB21611CB3BEE3005DB294 /* QIReleaseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIReleaseHandle.h; sourceTree = "<group>"; };
+		BDDB21621CB3BEE3005DB294 /* QIReleaseHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIReleaseHandle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,20 +83,7 @@
 				BD7FC6221CAE478A003CFF5B /* AppDelegate.m */,
 				BD7FC6241CAE478A003CFF5B /* ViewController.h */,
 				BD7FC6251CAE478A003CFF5B /* ViewController.m */,
-				BD7FC6381CAE7448003CFF5B /* QICrashHandle.h */,
-				BD7FC6391CAE7448003CFF5B /* QICrashHandle.m */,
-				BD7FC63E1CAE74CD003CFF5B /* QIDebugHandle.h */,
-				BD7FC63F1CAE74CD003CFF5B /* QIDebugHandle.m */,
-				BD7FC63B1CAE745E003CFF5B /* QIErrorHandle.h */,
-				BD7FC63C1CAE745E003CFF5B /* QIErrorHandle.m */,
-				BD7FC6441CAE908E003CFF5B /* QIReleaseHandle.h */,
-				BD7FC6451CAE908E003CFF5B /* QIReleaseHandle.m */,
-				BD7FC6471CAE909B003CFF5B /* QIInfoHandle.h */,
-				BD7FC6481CAE909B003CFF5B /* QIInfoHandle.m */,
-				BD7FC6351CAE47A9003CFF5B /* QIFileWriter.h */,
-				BD7FC6361CAE47A9003CFF5B /* QIFileWriter.m */,
-				BD7FC6411CAE80CF003CFF5B /* QIDeviceInfo.h */,
-				BD7FC6421CAE80CF003CFF5B /* QIDeviceInfo.m */,
+				BDDB21541CB3BEE3005DB294 /* QiCrashKit */,
 				BD7FC6271CAE478A003CFF5B /* Main.storyboard */,
 				BD7FC62A1CAE478A003CFF5B /* Assets.xcassets */,
 				BD7FC62C1CAE478A003CFF5B /* LaunchScreen.storyboard */,
@@ -112,6 +99,27 @@
 				BD7FC61F1CAE478A003CFF5B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDDB21541CB3BEE3005DB294 /* QiCrashKit */ = {
+			isa = PBXGroup;
+			children = (
+				BDDB21551CB3BEE3005DB294 /* QICrashHandle.h */,
+				BDDB21561CB3BEE3005DB294 /* QICrashHandle.m */,
+				BDDB21571CB3BEE3005DB294 /* QIDebugHandle.h */,
+				BDDB21581CB3BEE3005DB294 /* QIDebugHandle.m */,
+				BDDB21591CB3BEE3005DB294 /* QIDeviceInfo.h */,
+				BDDB215A1CB3BEE3005DB294 /* QIDeviceInfo.m */,
+				BDDB215B1CB3BEE3005DB294 /* QIErrorHandle.h */,
+				BDDB215C1CB3BEE3005DB294 /* QIErrorHandle.m */,
+				BDDB215D1CB3BEE3005DB294 /* QIFileWriter.h */,
+				BDDB215E1CB3BEE3005DB294 /* QIFileWriter.m */,
+				BDDB215F1CB3BEE3005DB294 /* QIInfoHandle.h */,
+				BDDB21601CB3BEE3005DB294 /* QIInfoHandle.m */,
+				BDDB21611CB3BEE3005DB294 /* QIReleaseHandle.h */,
+				BDDB21621CB3BEE3005DB294 /* QIReleaseHandle.m */,
+			);
+			path = QiCrashKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,16 +192,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7FC63D1CAE745E003CFF5B /* QIErrorHandle.m in Sources */,
-				BD7FC6491CAE909B003CFF5B /* QIInfoHandle.m in Sources */,
-				BD7FC6371CAE47A9003CFF5B /* QIFileWriter.m in Sources */,
+				BDDB21681CB3BEE3005DB294 /* QIInfoHandle.m in Sources */,
+				BDDB21671CB3BEE3005DB294 /* QIFileWriter.m in Sources */,
 				BD7FC6261CAE478A003CFF5B /* ViewController.m in Sources */,
-				BD7FC6401CAE74CD003CFF5B /* QIDebugHandle.m in Sources */,
+				BDDB21661CB3BEE3005DB294 /* QIErrorHandle.m in Sources */,
+				BDDB21651CB3BEE3005DB294 /* QIDeviceInfo.m in Sources */,
+				BDDB21631CB3BEE3005DB294 /* QICrashHandle.m in Sources */,
 				BD7FC6231CAE478A003CFF5B /* AppDelegate.m in Sources */,
+				BDDB21691CB3BEE3005DB294 /* QIReleaseHandle.m in Sources */,
 				BD7FC6201CAE478A003CFF5B /* main.m in Sources */,
-				BD7FC6461CAE908E003CFF5B /* QIReleaseHandle.m in Sources */,
-				BD7FC63A1CAE7448003CFF5B /* QICrashHandle.m in Sources */,
-				BD7FC6431CAE80CF003CFF5B /* QIDeviceInfo.m in Sources */,
+				BDDB21641CB3BEE3005DB294 /* QIDebugHandle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +348,7 @@
 				BD7FC6341CAE478A003CFF5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

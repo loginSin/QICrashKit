@@ -11,6 +11,8 @@
 static NSString *releaseSelecotrNameKey = @"releaseSelecotrName";//release信息出现的方法名
 static NSString *releaseMessageKey = @"releaseMessage";//release信息
 static NSString *releaseAdditionKey = @"releaseAddition";//release信息的附加信息
+static NSString *releaseTimeKey = @"releaseTime";//release信息的时间
+static NSString *releaseDeviceKey = @"releaseDevice";//release信息的设备信息
 
 /**
  *  release信息收集类，主要针对服务器返回给客户端的错误码

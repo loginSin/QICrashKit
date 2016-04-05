@@ -12,6 +12,8 @@
 static NSString *debugSelecotrNameKey = @"debugSelecotrName";//debug信息出现的方法名
 static NSString *debugMessageKey = @"debugMessage";//debug信息
 static NSString *debugAdditionKey = @"debugAddition";//debug信息的附加信息
+static NSString *debugTimeKey = @"debugTime";//debug信息的时间
+static NSString *debugDeviceKey = @"debugDevice";//debug信息的设备信息
 
 /**
  *  debug信息收集类，主要来记录用户自己的调试信息

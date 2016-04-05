@@ -8,6 +8,7 @@
 
 #import "QIDebugHandle.h"
 #import "QIFileWriter.h"
+#import "QIDeviceInfo.h"
 
 static BOOL needCoverDebugInfo = NO;
 
@@ -21,7 +22,7 @@ static BOOL needCoverDebugInfo = NO;
 }
 
 + (BOOL)debugInfoForWriteToFileWithSelectorName:(NSString *)selName debugMessage:(id)message debugAddition:(id)addition {
-    NSDictionary *dic = @{debugSelecotrNameKey:selName,debugMessageKey:message,debugAdditionKey:addition};
+    NSDictionary *dic = @{debugSelecotrNameKey:selName,debugMessageKey:message,debugAdditionKey:addition,debugTimeKey:deviceToGetCurrentTime(),debugDeviceKey:deviceToGetDeviceInfo()};
     if(needCoverDebugInfo) {
         [QIFileWriter coverPreviousDataWithLogType:QILogType_Debug];
     }

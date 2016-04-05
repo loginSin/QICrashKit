@@ -8,6 +8,7 @@
 
 #import "QIReleaseHandle.h"
 #import "QIFileWriter.h"
+#import "QIDeviceInfo.h"
 
 static BOOL needCoverReleaseInfo = NO;
 
@@ -21,7 +22,7 @@ static BOOL needCoverReleaseInfo = NO;
 }
 
 + (BOOL)releaseInfoForWriteToFileWithSelectorName:(NSString *)selName releaseMessage:(id)message releaseAddition:(id)addition {
-    NSDictionary *dic = @{releaseSelecotrNameKey:selName,releaseMessageKey:message,releaseAdditionKey:addition};
+    NSDictionary *dic = @{releaseSelecotrNameKey:selName,releaseMessageKey:message,releaseAdditionKey:addition,releaseTimeKey:deviceToGetCurrentTime(),releaseDeviceKey:deviceToGetDeviceInfo()};
     if(needCoverReleaseInfo){
         [QIFileWriter coverPreviousDataWithLogType:QILogType_Release];
     }
