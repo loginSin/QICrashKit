@@ -8,6 +8,7 @@
 
 #import "QIInfoHandle.h"
 #import "QIFileWriter.h"
+#import "QIDeviceInfo.h"
 
 static BOOL needCoverInfo = NO;
 
@@ -21,7 +22,7 @@ static BOOL needCoverInfo = NO;
 }
 
 + (BOOL)infoInfoForWriteToFileWithSelectorName:(NSString *)selName infoMessage:(id)message infoAddition:(id)addition {
-    NSDictionary *dic = @{infoSelecotrNameKey:selName,infoMessageKey:message,infoAdditionKey:addition};
+    NSDictionary *dic = @{infoSelecotrNameKey:selName,infoMessageKey:message,infoAdditionKey:addition,infoTimeKey:deviceToGetCurrentTime(),infoDeviceKey:deviceToGetDeviceInfo()};
     if(needCoverInfo){
         [QIFileWriter coverPreviousDataWithLogType:QILogType_Info];
     }

@@ -8,6 +8,7 @@
 
 #import "QIErrorHandle.h"
 #import "QIFileWriter.h"
+#import "QIDeviceInfo.h"
 
 static BOOL needCoverErrorInfo = NO;
 
@@ -21,7 +22,7 @@ static BOOL needCoverErrorInfo = NO;
 }
 
 + (BOOL)errorInfoForWriteToFileWithSelectorName:(NSString *)selName errorMessage:(id)message errorAddition:(id)addition {
-    NSDictionary *dic = @{errorSelecotrNameKey:selName,errorMessageKey:message,errorAdditionKey:addition};
+    NSDictionary *dic = @{errorSelecotrNameKey:selName,errorMessageKey:message,errorAdditionKey:addition,errorTimeKey:deviceToGetCurrentTime(),errorDeviceKey:deviceToGetDeviceInfo()};
     if(needCoverErrorInfo){
         [QIFileWriter coverPreviousDataWithLogType:QILogType_Error];
     }

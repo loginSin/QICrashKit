@@ -12,6 +12,8 @@
 static NSString *infoSelecotrNameKey = @"infoSelecotrName";//info信息出现的方法名
 static NSString *infoMessageKey = @"infoMessage";//info信息
 static NSString *infoAdditionKey = @"infoAddition";//info信息的附加信息
+static NSString *infoTimeKey = @"infoTime";//info信息的时间
+static NSString *infoDeviceKey = @"infoDevice";//info信息的设备信息
 
 /**
  *  info信息收集类，主要针对服务器返回给客户端的错误码

@@ -12,6 +12,8 @@
 static NSString *errorSelecotrNameKey = @"errorSelecotrName";//error信息出现的方法名
 static NSString *errorMessageKey = @"errorMessage";//error信息
 static NSString *errorAdditionKey = @"errorAddition";//error信息的附加信息
+static NSString *errorTimeKey = @"errorTime";//error信息的时间
+static NSString *errorDeviceKey = @"errorDevice";//error信息的设备信息
 
 /**
  *  error信息收集类，主要针对服务器返回给客户端的错误码
