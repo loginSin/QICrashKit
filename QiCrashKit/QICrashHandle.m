@@ -25,7 +25,7 @@ static BOOL needCoverCrashInfo = NO;
     NSSetUncaughtExceptionHandler(&p_MailUncaughtExceptionHandler);
 }
 
-+ (BOOL)deleteExceptionInfo {
++ (BOOL)deleteCrashInfo {
     return [QIFileWriter deleteDataWithFilename:crashFilename];
 }
 
@@ -54,7 +54,7 @@ void p_MailUncaughtExceptionHandler(NSException * exception){
             i--;
         }
     }
-    NSDictionary *dic = @{exceptionTimekey:deviceToGetCurrentTime(),exceptionDevicekey:deviceToGetDeviceInfo(),exceptionInfokey:exception.reason,exceptionStackkey:stackArray};
+    NSDictionary *dic = @{crashTimekey:deviceToGetCurrentTime(),crashDevicekey:deviceToGetDeviceInfo(),crashInfokey:exception.reason,crashStackkey:stackArray};
     if(needCoverCrashInfo){
         [QIFileWriter coverPreviousDataWithLogType:QILogType_Crash];
     }

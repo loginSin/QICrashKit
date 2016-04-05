@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  用来获取手机的信息和当前的时间
+ *  用来获取手机的信息和当前的时间，一般用户不需要直接使用，该类是对其他的Handle进行支持
  */
 @interface QIDeviceInfo : NSObject
 

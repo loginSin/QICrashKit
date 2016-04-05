@@ -16,7 +16,22 @@ static BOOL needCoverError = NO;
 static BOOL needCoverRelease = NO;
 static BOOL needCoverInfo = NO;
 
+//GCD信号量，用来控制线程安全
+static dispatch_semaphore_t _preloadedLock;
+
 @implementation QIFileWriter
+
++ (void)load {
+    //dispatch_semaphore_t _preloadedLock;
+    //_preloadedLock = dispatch_semaphore_create(1);
+    
+    _preloadedLock = dispatch_semaphore_create(1);
+    
+    //dispatch_semaphore_wait(_preloadedLock, DISPATCH_TIME_FOREVER);
+    //_preloadedFrames = frames;
+    //dispatch_semaphore_signal(_preloadedLock);
+
+}
 
 /**
  *  是否覆盖之前的数据
@@ -29,12 +44,15 @@ static BOOL needCoverInfo = NO;
  *  往文件中追加数据，调用此方法数据默认保存在沙盒的Documents/log.txt中
  */
 + (BOOL)appendToFileWithContent:(id)obj {
+    dispatch_semaphore_wait(_preloadedLock, DISPATCH_TIME_FOREVER);
     NSMutableArray *arrM = [[self data] mutableCopy];
     if(!arrM||needCover){
         arrM = [NSMutableArray array];
     }
     [arrM addObject:obj];
-    return [arrM writeToFile:[self filePath] atomically:YES];
+    BOOL result = [arrM writeToFile:[self filePath] atomically:YES];
+    dispatch_semaphore_signal(_preloadedLock);
+    return result;
 }
 
 /**
@@ -60,6 +78,7 @@ static BOOL needCoverInfo = NO;
  *  删除默认文件的所有数据
  */
 + (BOOL)deleteData {
+    dispatch_semaphore_wait(_preloadedLock, DISPATCH_TIME_FOREVER);
     NSString *filePath = [self filePath];
     NSFileManager *manager = [NSFileManager defaultManager];
     if(![manager fileExistsAtPath:filePath]) {
@@ -67,7 +86,9 @@ static BOOL needCoverInfo = NO;
         return NO;
     }
     NSArray *array = [NSArray array];
-    return [array writeToFile:filePath atomically:YES];
+    BOOL result = [array writeToFile:filePath atomically:YES];
+    dispatch_semaphore_signal(_preloadedLock);
+    return result;
 }
 @end
 
@@ -95,6 +116,7 @@ static BOOL needCoverInfo = NO;
  *  存到Documents下指定的文件下
  */
 + (BOOL)appendToFileWithContent:(id)obj withFilename:(NSString *)filename {
+    dispatch_semaphore_wait(_preloadedLock, DISPATCH_TIME_FOREVER);
     NSMutableArray *arrM = [[self dataWithFilename:filename] mutableCopy];
     //如果从文件中读取的数据为空
     if(!arrM){
@@ -105,7 +127,9 @@ static BOOL needCoverInfo = NO;
         arrM = [NSMutableArray array];
     }
     [arrM addObject:obj];
-    return [arrM writeToFile:[self filePathWithFilename:filename] atomically:YES];
+    BOOL result = [arrM writeToFile:[self filePathWithFilename:filename] atomically:YES];
+    dispatch_semaphore_signal(_preloadedLock);
+    return result;
 }
 
 + (BOOL)p_needCoverWithfileName:(NSString *)filename {
@@ -145,6 +169,7 @@ static BOOL needCoverInfo = NO;
  *  删除特定文件的所有数据
  */
 + (BOOL)deleteDataWithFilename:(NSString *)filename {
+    dispatch_semaphore_wait(_preloadedLock, DISPATCH_TIME_FOREVER);
     NSFileManager *manager = [NSFileManager defaultManager];
     NSString *filePath = [self filePathWithFilename:filename];
     if(![manager fileExistsAtPath:filePath]){
@@ -152,7 +177,9 @@ static BOOL needCoverInfo = NO;
         return NO;
     }
     NSArray *array = [NSArray array];
-    return [array writeToFile:filePath atomically:YES];
+    BOOL result = [array writeToFile:filePath atomically:YES];
+    dispatch_semaphore_signal(_preloadedLock);
+    return result;
 }
 
 //获取Documents,该类扩展的私有方法
