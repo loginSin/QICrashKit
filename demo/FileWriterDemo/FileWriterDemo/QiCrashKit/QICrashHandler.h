@@ -9,15 +9,15 @@
 
 #import <Foundation/Foundation.h>
 //崩溃信息的字典包含的所有的key
-static NSString *crashTimekey = @"crashTime";//崩溃时间
-static NSString *crashInfokey = @"crashInfo";//崩溃信息
-static NSString *crashStackkey = @"crashStack";//崩溃时的堆栈情况
-static NSString *crashDevicekey = @"crashDevice";//发生崩溃的设备情况
+static NSString *crashTimekey       = @"crashTime";//崩溃时间
+static NSString *crashInfokey       = @"crashInfo";//崩溃信息
+static NSString *crashStackkey      = @"crashStack";//崩溃时的堆栈情况
+static NSString *crashDevicekey     = @"crashDevice";//发生崩溃的设备情况
 
 /**
  *  崩溃检测类,当崩溃发生的时候可以自动检测，崩溃日志写在app的Documents/crash.txt中
  */
-@interface QICrashHandle : NSObject
+@interface QICrashHandler : NSObject
 
 /**
  *  覆盖之前的数据

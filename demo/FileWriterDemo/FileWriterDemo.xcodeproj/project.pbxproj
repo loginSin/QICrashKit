@@ -13,13 +13,13 @@
 		BD7FC6291CAE478A003CFF5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7FC6271CAE478A003CFF5B /* Main.storyboard */; };
 		BD7FC62B1CAE478A003CFF5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7FC62A1CAE478A003CFF5B /* Assets.xcassets */; };
 		BD7FC62E1CAE478A003CFF5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7FC62C1CAE478A003CFF5B /* LaunchScreen.storyboard */; };
-		BDDB21631CB3BEE3005DB294 /* QICrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21561CB3BEE3005DB294 /* QICrashHandle.m */; };
-		BDDB21641CB3BEE3005DB294 /* QIDebugHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21581CB3BEE3005DB294 /* QIDebugHandle.m */; };
+		BDDB21631CB3BEE3005DB294 /* QICrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21561CB3BEE3005DB294 /* QICrashHandler.m */; };
+		BDDB21641CB3BEE3005DB294 /* QIDebugHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21581CB3BEE3005DB294 /* QIDebugHandler.m */; };
 		BDDB21651CB3BEE3005DB294 /* QIDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB215A1CB3BEE3005DB294 /* QIDeviceInfo.m */; };
-		BDDB21661CB3BEE3005DB294 /* QIErrorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB215C1CB3BEE3005DB294 /* QIErrorHandle.m */; };
+		BDDB21661CB3BEE3005DB294 /* QIErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB215C1CB3BEE3005DB294 /* QIErrorHandler.m */; };
 		BDDB21671CB3BEE3005DB294 /* QIFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB215E1CB3BEE3005DB294 /* QIFileWriter.m */; };
-		BDDB21681CB3BEE3005DB294 /* QIInfoHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21601CB3BEE3005DB294 /* QIInfoHandle.m */; };
-		BDDB21691CB3BEE3005DB294 /* QIReleaseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21621CB3BEE3005DB294 /* QIReleaseHandle.m */; };
+		BDDB21681CB3BEE3005DB294 /* QIInfoHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21601CB3BEE3005DB294 /* QIInfoHandler.m */; };
+		BDDB21691CB3BEE3005DB294 /* QIReleaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21621CB3BEE3005DB294 /* QIReleaseHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,20 +33,20 @@
 		BD7FC62A1CAE478A003CFF5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7FC62D1CAE478A003CFF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD7FC62F1CAE478A003CFF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDDB21551CB3BEE3005DB294 /* QICrashHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICrashHandle.h; sourceTree = "<group>"; };
-		BDDB21561CB3BEE3005DB294 /* QICrashHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICrashHandle.m; sourceTree = "<group>"; };
-		BDDB21571CB3BEE3005DB294 /* QIDebugHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIDebugHandle.h; sourceTree = "<group>"; };
-		BDDB21581CB3BEE3005DB294 /* QIDebugHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIDebugHandle.m; sourceTree = "<group>"; };
+		BDDB21551CB3BEE3005DB294 /* QICrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICrashHandler.h; sourceTree = "<group>"; };
+		BDDB21561CB3BEE3005DB294 /* QICrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICrashHandler.m; sourceTree = "<group>"; };
+		BDDB21571CB3BEE3005DB294 /* QIDebugHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIDebugHandler.h; sourceTree = "<group>"; };
+		BDDB21581CB3BEE3005DB294 /* QIDebugHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIDebugHandler.m; sourceTree = "<group>"; };
 		BDDB21591CB3BEE3005DB294 /* QIDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIDeviceInfo.h; sourceTree = "<group>"; };
 		BDDB215A1CB3BEE3005DB294 /* QIDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIDeviceInfo.m; sourceTree = "<group>"; };
-		BDDB215B1CB3BEE3005DB294 /* QIErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIErrorHandle.h; sourceTree = "<group>"; };
-		BDDB215C1CB3BEE3005DB294 /* QIErrorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIErrorHandle.m; sourceTree = "<group>"; };
+		BDDB215B1CB3BEE3005DB294 /* QIErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIErrorHandler.h; sourceTree = "<group>"; };
+		BDDB215C1CB3BEE3005DB294 /* QIErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIErrorHandler.m; sourceTree = "<group>"; };
 		BDDB215D1CB3BEE3005DB294 /* QIFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIFileWriter.h; sourceTree = "<group>"; };
 		BDDB215E1CB3BEE3005DB294 /* QIFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIFileWriter.m; sourceTree = "<group>"; };
-		BDDB215F1CB3BEE3005DB294 /* QIInfoHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIInfoHandle.h; sourceTree = "<group>"; };
-		BDDB21601CB3BEE3005DB294 /* QIInfoHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIInfoHandle.m; sourceTree = "<group>"; };
-		BDDB21611CB3BEE3005DB294 /* QIReleaseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIReleaseHandle.h; sourceTree = "<group>"; };
-		BDDB21621CB3BEE3005DB294 /* QIReleaseHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIReleaseHandle.m; sourceTree = "<group>"; };
+		BDDB215F1CB3BEE3005DB294 /* QIInfoHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIInfoHandler.h; sourceTree = "<group>"; };
+		BDDB21601CB3BEE3005DB294 /* QIInfoHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIInfoHandler.m; sourceTree = "<group>"; };
+		BDDB21611CB3BEE3005DB294 /* QIReleaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIReleaseHandler.h; sourceTree = "<group>"; };
+		BDDB21621CB3BEE3005DB294 /* QIReleaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIReleaseHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,16 +104,16 @@
 		BDDB21541CB3BEE3005DB294 /* QiCrashKit */ = {
 			isa = PBXGroup;
 			children = (
-				BDDB21551CB3BEE3005DB294 /* QICrashHandle.h */,
-				BDDB21561CB3BEE3005DB294 /* QICrashHandle.m */,
-				BDDB21571CB3BEE3005DB294 /* QIDebugHandle.h */,
-				BDDB21581CB3BEE3005DB294 /* QIDebugHandle.m */,
-				BDDB215B1CB3BEE3005DB294 /* QIErrorHandle.h */,
-				BDDB215C1CB3BEE3005DB294 /* QIErrorHandle.m */,
-				BDDB215F1CB3BEE3005DB294 /* QIInfoHandle.h */,
-				BDDB21601CB3BEE3005DB294 /* QIInfoHandle.m */,
-				BDDB21611CB3BEE3005DB294 /* QIReleaseHandle.h */,
-				BDDB21621CB3BEE3005DB294 /* QIReleaseHandle.m */,
+				BDDB21551CB3BEE3005DB294 /* QICrashHandler.h */,
+				BDDB21561CB3BEE3005DB294 /* QICrashHandler.m */,
+				BDDB21571CB3BEE3005DB294 /* QIDebugHandler.h */,
+				BDDB21581CB3BEE3005DB294 /* QIDebugHandler.m */,
+				BDDB215B1CB3BEE3005DB294 /* QIErrorHandler.h */,
+				BDDB215C1CB3BEE3005DB294 /* QIErrorHandler.m */,
+				BDDB215F1CB3BEE3005DB294 /* QIInfoHandler.h */,
+				BDDB21601CB3BEE3005DB294 /* QIInfoHandler.m */,
+				BDDB21611CB3BEE3005DB294 /* QIReleaseHandler.h */,
+				BDDB21621CB3BEE3005DB294 /* QIReleaseHandler.m */,
 				BDDB21591CB3BEE3005DB294 /* QIDeviceInfo.h */,
 				BDDB215A1CB3BEE3005DB294 /* QIDeviceInfo.m */,
 				BDDB215D1CB3BEE3005DB294 /* QIFileWriter.h */,
@@ -192,16 +192,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDDB21681CB3BEE3005DB294 /* QIInfoHandle.m in Sources */,
+				BDDB21681CB3BEE3005DB294 /* QIInfoHandler.m in Sources */,
 				BDDB21671CB3BEE3005DB294 /* QIFileWriter.m in Sources */,
 				BD7FC6261CAE478A003CFF5B /* ViewController.m in Sources */,
-				BDDB21661CB3BEE3005DB294 /* QIErrorHandle.m in Sources */,
+				BDDB21661CB3BEE3005DB294 /* QIErrorHandler.m in Sources */,
 				BDDB21651CB3BEE3005DB294 /* QIDeviceInfo.m in Sources */,
-				BDDB21631CB3BEE3005DB294 /* QICrashHandle.m in Sources */,
+				BDDB21631CB3BEE3005DB294 /* QICrashHandler.m in Sources */,
 				BD7FC6231CAE478A003CFF5B /* AppDelegate.m in Sources */,
-				BDDB21691CB3BEE3005DB294 /* QIReleaseHandle.m in Sources */,
+				BDDB21691CB3BEE3005DB294 /* QIReleaseHandler.m in Sources */,
 				BD7FC6201CAE478A003CFF5B /* main.m in Sources */,
-				BDDB21641CB3BEE3005DB294 /* QIDebugHandle.m in Sources */,
+				BDDB21641CB3BEE3005DB294 /* QIDebugHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FileWriterDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = loginSin.FileWriterDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FileWriterDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = loginSin.FileWriterDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

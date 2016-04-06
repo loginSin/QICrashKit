@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "QICrashHandle.h"
+#import "QICrashHandler.h"
 
 @interface AppDelegate ()
 
@@ -18,8 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [QICrashHandle coverPreviousData];
-    [QICrashHandle monitor];
+    
+    //设置崩溃日志管理者的配置，使其覆盖之前的数据，这样每次只有一组最新的崩溃数据，如果不想覆盖之前的数据，可以不调用此方法
+    [QICrashHandler coverPreviousData];
+    //开始监测崩溃
+    [QICrashHandler monitor];
+    
     return YES;
 }
 

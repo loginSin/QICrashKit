@@ -37,6 +37,9 @@ typedef enum : NSUInteger {
 
 
 //一般用户不需要直接使用，该类是对其他的Handle进行支持
+
+//*************支持线程安全***************
+
 /**
  *  文件写入数据的管理类，默认写在沙盒的Documents/log.txt中
  *  @discussion 如果需要使用带filename的方法，之后的请都使用带filename的方法

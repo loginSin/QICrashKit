@@ -14,7 +14,7 @@
 @interface QIDeviceInfo : NSObject
 
 /**
- *  获取当前时间,此方法copy自YYKit
+ *  获取当前时间
  *
  *  @return 当前时间，格式为：2016-04-01_18:02:45
  */

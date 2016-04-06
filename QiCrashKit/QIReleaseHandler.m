@@ -6,13 +6,13 @@
 //  Copyright © 2016年 loginSin. All rights reserved.
 //
 
-#import "QIReleaseHandle.h"
+#import "QIReleaseHandler.h"
 #import "QIFileWriter.h"
 #import "QIDeviceInfo.h"
 
 static BOOL needCoverReleaseInfo = NO;
 
-@implementation QIReleaseHandle
+@implementation QIReleaseHandler
 
 /**
  *  是否覆盖之前的数据
@@ -21,6 +21,9 @@ static BOOL needCoverReleaseInfo = NO;
     needCoverReleaseInfo = YES;
 }
 
+/**
+ *  保存release日志到沙盒
+ */
 + (BOOL)releaseInfoForWriteToFileWithSelectorName:(NSString *)selName releaseMessage:(id)message releaseAddition:(id)addition {
     NSDictionary *dic = @{releaseSelecotrNameKey:selName,releaseMessageKey:message,releaseAdditionKey:addition,releaseTimeKey:deviceToGetCurrentTime(),releaseDeviceKey:deviceToGetDeviceInfo()};
     if(needCoverReleaseInfo){
@@ -28,9 +31,17 @@ static BOOL needCoverReleaseInfo = NO;
     }
     return [QIFileWriter appendToFileWithContent:dic withFilename:releaseFilename];
 }
-+ (BOOL)deletereleaseInfo {
+
+/**
+ *  清空release日志
+ */
++ (BOOL)deleteReleaseInfo {
     return [QIFileWriter deleteDataWithFilename:releaseFilename];
 }
+
+/**
+ *  获取release日志
+ */
 + (NSArray *)releaseInfo {
     return [QIFileWriter dataWithFilename:releaseFilename];
 }

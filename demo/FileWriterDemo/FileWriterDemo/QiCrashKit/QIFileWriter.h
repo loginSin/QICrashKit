@@ -10,19 +10,19 @@
 
 //下列的文件名是预设好的，可以直接使用
 
-//崩溃信息的文件名，路径为Documents/crash.txt
+//crash信息的文件名，路径为Documents/crash.txt
 static NSString *crashFilename = @"crash.txt";
 
-//调试信息的文件名，路径为Documents/debug.txt
+//debug信息的文件名，路径为Documents/debug.txt
 static NSString *debugFilename = @"debug.txt";
 
-//错误信息的文件名，路径为Documents/error.txt
+//error信息的文件名，路径为Documents/error.txt
 static NSString *errorFilename = @"error.txt";
 
-//发布信息的文件名，路径为Documents/release.txt
+//release信息的文件名，路径为Documents/release.txt
 static NSString *releaseFilename = @"release.txt";
 
-//一般信息的文件名，路径为Documents/info.txt
+//info信息的文件名，路径为Documents/info.txt
 static NSString *infoFilename = @"info.txt";
 
 
@@ -37,6 +37,9 @@ typedef enum : NSUInteger {
 
 
 //一般用户不需要直接使用，该类是对其他的Handle进行支持
+
+//*************支持线程安全***************
+
 /**
  *  文件写入数据的管理类，默认写在沙盒的Documents/log.txt中
  *  @discussion 如果需要使用带filename的方法，之后的请都使用带filename的方法

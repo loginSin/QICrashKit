@@ -10,27 +10,37 @@
 
 static BOOL needCover = NO;
 
-static BOOL needCoverCrash = NO;
-static BOOL needCoverDebug = NO;
-static BOOL needCoverError = NO;
-static BOOL needCoverRelease = NO;
-static BOOL needCoverInfo = NO;
+static BOOL needCoverCrash = NO;//是否覆盖崩溃日志
+static BOOL needCoverDebug = NO;//是否覆盖debug日志
+static BOOL needCoverError = NO;//是否覆盖error日志
+static BOOL needCoverRelease = NO;//是否覆盖release日志
+static BOOL needCoverInfo = NO;//是否覆盖info日志
 
-//GCD信号量，用来控制线程安全
+//GCD信号量，用来控制线程安全，详情见YYKit的UIButton+YYWebImage.m
+//github:https://github.com/ibireme/YYKit
 static dispatch_semaphore_t _preloadedLock;
+
+
+//另外一种线程安全方式，详情见YYKit的YYMemoryCache.m
+//github:https://github.com/ibireme/YYKit
+
+//pthread_mutex_t _lock;                //声明互斥量
+//pthread_mutex_init(&_lock, NULL)      //初始化互斥量，在适当时候初始化，一般是类的全能初始化方法中
+
+//pthread_mutex_lock(&_lock);           //使用互斥量锁住线程，在可能会被多线程同时访问的地方加上
+//pthread_mutex_unlock(&_lock);         //解锁线程，二者为一组
+
+//pthread_mutex_trylock(&_lock) == 0    //尝试锁住线程，在可能会被多线程同时访问的地方加上
+//pthread_mutex_unlock(&_lock)          //解锁线程，二者为一组
+
+//pthread_mutex_destroy(&_lock)         //销毁信号量，在不再需要锁进程的时候销毁，一般在dealloc调用
 
 @implementation QIFileWriter
 
+//该方法在类加载的时候被调用
 + (void)load {
-    //dispatch_semaphore_t _preloadedLock;
-    //_preloadedLock = dispatch_semaphore_create(1);
-    
+    //正常应该在初始化方法中初始化该信号量，但是这个工具类并不是单例类，写初始化方法并不会起任何作用，所以在此处初始化
     _preloadedLock = dispatch_semaphore_create(1);
-    
-    //dispatch_semaphore_wait(_preloadedLock, DISPATCH_TIME_FOREVER);
-    //_preloadedFrames = frames;
-    //dispatch_semaphore_signal(_preloadedLock);
-
 }
 
 /**

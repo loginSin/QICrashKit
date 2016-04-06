@@ -8,17 +8,17 @@
 
 #import <Foundation/Foundation.h>
 //release信息字典所有的key
-static NSString *releaseSelecotrNameKey = @"releaseSelecotrName";//release信息出现的方法名
-static NSString *releaseMessageKey = @"releaseMessage";//release信息
-static NSString *releaseAdditionKey = @"releaseAddition";//release信息的附加信息
-static NSString *releaseTimeKey = @"releaseTime";//release信息的时间
-static NSString *releaseDeviceKey = @"releaseDevice";//release信息的设备信息
+static NSString *releaseSelecotrNameKey     = @"releaseSelecotrName";//release信息出现的方法名
+static NSString *releaseMessageKey          = @"releaseMessage";//release信息
+static NSString *releaseAdditionKey         = @"releaseAddition";//release信息的附加信息
+static NSString *releaseTimeKey             = @"releaseTime";//release信息的时间
+static NSString *releaseDeviceKey           = @"releaseDevice";//release信息的设备信息
 
 /**
  *  release信息收集类，主要针对服务器返回给客户端的错误码
- *  release信息没办法自动获取，只能用户在必要的时候添加，这样才能正常的记录release信息
+ *  release信息没办法自动获取，只能用户在必要的时候添加，这样才能正常的记录release信息，数据写在Documents/release.txt
  */
-@interface QIReleaseHandle : NSObject
+@interface QIReleaseHandler : NSObject
 
 /**
  *  覆盖之前的数据
@@ -30,8 +30,8 @@ static NSString *releaseDeviceKey = @"releaseDevice";//release信息的设备信
  *  将release信息写入文件，文件路径为Documents/release.txt
  *
  *  @param selName  方法名
- *  @param message  release信息
- *  @param addition 一些用户自定义的附加信息
+ *  @param message  release信息，可以是字符串、字典、NSData
+ *  @param addition 一些用户自定义的附加信息，可以是字符串、字典、NSData
  *
  *  @return 写入数据是否成功
  */
@@ -42,7 +42,7 @@ static NSString *releaseDeviceKey = @"releaseDevice";//release信息的设备信
  *
  *  @return 是否清空成功
  */
-+ (BOOL)deletereleaseInfo;
++ (BOOL)deleteReleaseInfo;
 
 /**
  *  获取release信息

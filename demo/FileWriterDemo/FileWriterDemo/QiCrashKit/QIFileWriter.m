@@ -18,7 +18,6 @@ static BOOL needCoverInfo = NO;//是否覆盖info日志
 
 //GCD信号量，用来控制线程安全，详情见YYKit的UIButton+YYWebImage.m
 //github:https://github.com/ibireme/YYKit
-
 static dispatch_semaphore_t _preloadedLock;
 
 

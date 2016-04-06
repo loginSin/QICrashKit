@@ -17,7 +17,7 @@ static NSString *crashDevicekey = @"crashDevice";//发生崩溃的设备情况
 /**
  *  崩溃检测类,当崩溃发生的时候可以自动检测，崩溃日志写在app的Documents/crash.txt中
  */
-@interface QICrashHandle : NSObject
+@interface QICrashHandler : NSObject
 
 /**
  *  覆盖之前的数据

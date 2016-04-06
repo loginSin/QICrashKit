@@ -6,13 +6,13 @@
 //  Copyright © 2016年 loginSin. All rights reserved.
 //
 
-#import "QIInfoHandle.h"
+#import "QIInfoHandler.h"
 #import "QIFileWriter.h"
 #import "QIDeviceInfo.h"
 
 static BOOL needCoverInfo = NO;
 
-@implementation QIInfoHandle
+@implementation QIInfoHandler
 
 /**
  *  是否覆盖之前的数据
@@ -21,6 +21,9 @@ static BOOL needCoverInfo = NO;
     needCoverInfo = YES;
 }
 
+/**
+ *  保存info日志到沙盒
+ */
 + (BOOL)infoInfoForWriteToFileWithSelectorName:(NSString *)selName infoMessage:(id)message infoAddition:(id)addition {
     NSDictionary *dic = @{infoSelecotrNameKey:selName,infoMessageKey:message,infoAdditionKey:addition,infoTimeKey:deviceToGetCurrentTime(),infoDeviceKey:deviceToGetDeviceInfo()};
     if(needCoverInfo){
@@ -28,9 +31,17 @@ static BOOL needCoverInfo = NO;
     }
     return [QIFileWriter appendToFileWithContent:dic withFilename:infoFilename];
 }
+
+/**
+ *  清空之前的info日志
+ */
 + (BOOL)deleteinfoInfo {
     return [QIFileWriter deleteDataWithFilename:infoFilename];
 }
+
+/**
+ *  获取info日志
+ */
 + (NSArray *)infoInfo {
     return [QIFileWriter dataWithFilename:infoFilename];
 }
