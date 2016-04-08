@@ -13,6 +13,12 @@
 		BD7FC6291CAE478A003CFF5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7FC6271CAE478A003CFF5B /* Main.storyboard */; };
 		BD7FC62B1CAE478A003CFF5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7FC62A1CAE478A003CFF5B /* Assets.xcassets */; };
 		BD7FC62E1CAE478A003CFF5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7FC62C1CAE478A003CFF5B /* LaunchScreen.storyboard */; };
+		BDA9A35B1CB76C4A00192ADC /* QICrashHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA9A35A1CB76C4A00192ADC /* QICrashHttpManager.m */; };
+		BDA9A35E1CB770FD00192ADC /* QICrashModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA9A35D1CB770FD00192ADC /* QICrashModel.m */; };
+		BDA9A3611CB771D000192ADC /* QIDebugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA9A3601CB771D000192ADC /* QIDebugModel.m */; };
+		BDA9A3641CB7726800192ADC /* QIErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA9A3631CB7726800192ADC /* QIErrorModel.m */; };
+		BDA9A3671CB772D600192ADC /* QIInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA9A3661CB772D600192ADC /* QIInfoModel.m */; };
+		BDA9A36A1CB7737000192ADC /* QIReleaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA9A3691CB7737000192ADC /* QIReleaseModel.m */; };
 		BDDB21631CB3BEE3005DB294 /* QICrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21561CB3BEE3005DB294 /* QICrashHandler.m */; };
 		BDDB21641CB3BEE3005DB294 /* QIDebugHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB21581CB3BEE3005DB294 /* QIDebugHandler.m */; };
 		BDDB21651CB3BEE3005DB294 /* QIDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDB215A1CB3BEE3005DB294 /* QIDeviceInfo.m */; };
@@ -33,6 +39,18 @@
 		BD7FC62A1CAE478A003CFF5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7FC62D1CAE478A003CFF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD7FC62F1CAE478A003CFF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA9A3591CB76C4A00192ADC /* QICrashHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICrashHttpManager.h; sourceTree = "<group>"; };
+		BDA9A35A1CB76C4A00192ADC /* QICrashHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICrashHttpManager.m; sourceTree = "<group>"; };
+		BDA9A35C1CB770FD00192ADC /* QICrashModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICrashModel.h; sourceTree = "<group>"; };
+		BDA9A35D1CB770FD00192ADC /* QICrashModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICrashModel.m; sourceTree = "<group>"; };
+		BDA9A35F1CB771D000192ADC /* QIDebugModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIDebugModel.h; sourceTree = "<group>"; };
+		BDA9A3601CB771D000192ADC /* QIDebugModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIDebugModel.m; sourceTree = "<group>"; };
+		BDA9A3621CB7726800192ADC /* QIErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIErrorModel.h; sourceTree = "<group>"; };
+		BDA9A3631CB7726800192ADC /* QIErrorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIErrorModel.m; sourceTree = "<group>"; };
+		BDA9A3651CB772D600192ADC /* QIInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIInfoModel.h; sourceTree = "<group>"; };
+		BDA9A3661CB772D600192ADC /* QIInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIInfoModel.m; sourceTree = "<group>"; };
+		BDA9A3681CB7737000192ADC /* QIReleaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIReleaseModel.h; sourceTree = "<group>"; };
+		BDA9A3691CB7737000192ADC /* QIReleaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QIReleaseModel.m; sourceTree = "<group>"; };
 		BDDB21551CB3BEE3005DB294 /* QICrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICrashHandler.h; sourceTree = "<group>"; };
 		BDDB21561CB3BEE3005DB294 /* QICrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICrashHandler.m; sourceTree = "<group>"; };
 		BDDB21571CB3BEE3005DB294 /* QIDebugHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIDebugHandler.h; sourceTree = "<group>"; };
@@ -104,6 +122,18 @@
 		BDDB21541CB3BEE3005DB294 /* QiCrashKit */ = {
 			isa = PBXGroup;
 			children = (
+				BDA9A3591CB76C4A00192ADC /* QICrashHttpManager.h */,
+				BDA9A35A1CB76C4A00192ADC /* QICrashHttpManager.m */,
+				BDA9A35C1CB770FD00192ADC /* QICrashModel.h */,
+				BDA9A35D1CB770FD00192ADC /* QICrashModel.m */,
+				BDA9A35F1CB771D000192ADC /* QIDebugModel.h */,
+				BDA9A3601CB771D000192ADC /* QIDebugModel.m */,
+				BDA9A3621CB7726800192ADC /* QIErrorModel.h */,
+				BDA9A3631CB7726800192ADC /* QIErrorModel.m */,
+				BDA9A3651CB772D600192ADC /* QIInfoModel.h */,
+				BDA9A3661CB772D600192ADC /* QIInfoModel.m */,
+				BDA9A3681CB7737000192ADC /* QIReleaseModel.h */,
+				BDA9A3691CB7737000192ADC /* QIReleaseModel.m */,
 				BDDB21551CB3BEE3005DB294 /* QICrashHandler.h */,
 				BDDB21561CB3BEE3005DB294 /* QICrashHandler.m */,
 				BDDB21571CB3BEE3005DB294 /* QIDebugHandler.h */,
@@ -194,10 +224,16 @@
 			files = (
 				BDDB21681CB3BEE3005DB294 /* QIInfoHandler.m in Sources */,
 				BDDB21671CB3BEE3005DB294 /* QIFileWriter.m in Sources */,
+				BDA9A3641CB7726800192ADC /* QIErrorModel.m in Sources */,
+				BDA9A35B1CB76C4A00192ADC /* QICrashHttpManager.m in Sources */,
+				BDA9A3671CB772D600192ADC /* QIInfoModel.m in Sources */,
 				BD7FC6261CAE478A003CFF5B /* ViewController.m in Sources */,
 				BDDB21661CB3BEE3005DB294 /* QIErrorHandler.m in Sources */,
+				BDA9A36A1CB7737000192ADC /* QIReleaseModel.m in Sources */,
+				BDA9A35E1CB770FD00192ADC /* QICrashModel.m in Sources */,
 				BDDB21651CB3BEE3005DB294 /* QIDeviceInfo.m in Sources */,
 				BDDB21631CB3BEE3005DB294 /* QICrashHandler.m in Sources */,
+				BDA9A3611CB771D000192ADC /* QIDebugModel.m in Sources */,
 				BD7FC6231CAE478A003CFF5B /* AppDelegate.m in Sources */,
 				BDDB21691CB3BEE3005DB294 /* QIReleaseHandler.m in Sources */,
 				BD7FC6201CAE478A003CFF5B /* main.m in Sources */,

@@ -37,10 +37,12 @@
     NSData *data = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:nil];
     NSString *str = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
     
-    [self testDebugHandleWithInfo:str];
-    [self testErrorHandleWithInfo:str];
-    [self testReleaseHandleWithInfo:str];
-    [self testInfoHandleWithInfo:str];
+    for(int i=0;i<10;i++){
+        [self testDebugHandleWithInfo:str];
+        [self testErrorHandleWithInfo:str];
+        [self testReleaseHandleWithInfo:str];
+        [self testInfoHandleWithInfo:str];
+    }
     
 }
 
@@ -69,7 +71,10 @@
 
 - (void)testDebugHandleWithInfo:(NSString *)str {
     //覆盖之前的数据
-    [QIDebugHandler coverPreviousData];
+//    [QIDebugHandler coverPreviousData];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+    });
     [QIDebugHandler debugInfoForWriteToFileWithSelectorName:@"getUserInfo" debugMessage:str debugAddition:@"debug"];
     
     NSArray *array = [QIDebugHandler debugInfo];
@@ -77,11 +82,15 @@
 }
 
 - (void)testErrorHandleWithInfo:(NSString *)str {
-    [QIErrorHandler coverPreviousData];
-    [QIErrorHandler errorInfoForWriteToFileWithSelectorName:@"getUserInfo" errorMessage:str errorAddition:@"error"];
+//    [QIErrorHandler coverPreviousData];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [QIErrorHandler errorInfoForWriteToFileWithSelectorName:@"getUserInfo" errorMessage:str errorAddition:@"error"];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSArray *array = [QIErrorHandler errorInfo];
+            NSLog(@"error array %@",array);
+        });
+    });
     
-    NSArray *array = [QIErrorHandler errorInfo];
-    NSLog(@"error array %@",array);
 }
 
 - (void)testReleaseHandleWithInfo:(NSString *)str {
