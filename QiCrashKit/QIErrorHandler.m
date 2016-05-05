@@ -25,6 +25,9 @@ static BOOL needCoverErrorInfo = NO;
  *  保存error日志到沙盒
  */
 + (BOOL)errorInfoForWriteToFileWithSelectorName:(NSString *)selName errorMessage:(id)message errorAddition:(id)addition {
+    if(!message || !addition){
+        return NO;
+    }
     NSDictionary *dic = @{errorSelecotrNameKey:selName,errorMessageKey:message,errorAdditionKey:addition,errorTimeKey:deviceToGetCurrentTime(),errorDeviceKey:deviceToGetDeviceInfo()};
     if(needCoverErrorInfo){
         [QIFileWriter coverPreviousDataWithLogType:QILogType_Error];

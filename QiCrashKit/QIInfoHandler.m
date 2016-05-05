@@ -25,6 +25,9 @@ static BOOL needCoverInfo = NO;
  *  保存info日志到沙盒
  */
 + (BOOL)infoInfoForWriteToFileWithSelectorName:(NSString *)selName infoMessage:(id)message infoAddition:(id)addition {
+    if(!message || !addition){
+        return NO;
+    }
     NSDictionary *dic = @{infoSelecotrNameKey:selName,infoMessageKey:message,infoAdditionKey:addition,infoTimeKey:deviceToGetCurrentTime(),infoDeviceKey:deviceToGetDeviceInfo()};
     if(needCoverInfo){
         [QIFileWriter coverPreviousDataWithLogType:QILogType_Info];

@@ -25,6 +25,9 @@ static BOOL needCoverDebugInfo = NO;
  *  保存debug日志到沙盒
  */
 + (BOOL)debugInfoForWriteToFileWithSelectorName:(NSString *)selName debugMessage:(id)message debugAddition:(id)addition {
+    if(!message || !addition){
+        return NO;
+    }
     NSDictionary *dic = @{debugSelecotrNameKey:selName,debugMessageKey:message,debugAdditionKey:addition,debugTimeKey:deviceToGetCurrentTime(),debugDeviceKey:deviceToGetDeviceInfo()};
     if(needCoverDebugInfo) {
         [QIFileWriter coverPreviousDataWithLogType:QILogType_Debug];

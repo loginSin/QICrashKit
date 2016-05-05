@@ -25,6 +25,9 @@ static BOOL needCoverReleaseInfo = NO;
  *  保存release日志到沙盒
  */
 + (BOOL)releaseInfoForWriteToFileWithSelectorName:(NSString *)selName releaseMessage:(id)message releaseAddition:(id)addition {
+    if(!message || !addition){
+        return NO;
+    }
     NSDictionary *dic = @{releaseSelecotrNameKey:selName,releaseMessageKey:message,releaseAdditionKey:addition,releaseTimeKey:deviceToGetCurrentTime(),releaseDeviceKey:deviceToGetDeviceInfo()};
     if(needCoverReleaseInfo){
         [QIFileWriter coverPreviousDataWithLogType:QILogType_Release];
