@@ -17,7 +17,7 @@ static NSString *infoDeviceKey          = @"infoDevice";//info信息的设备信
 
 /**
  *  info信息收集类，主要针对服务器返回给客户端的错误码
- *  info信息没办法自动获取，只能用户在必要的时候添加，这样才能正常的记录info信息，数据写在Documents/info.txt
+ *  info信息没办法自动获取，只能用户在必要的时候添加，这样才能正常的记录info信息
  */
 @interface QIInfoHandler : NSObject
 

@@ -10,19 +10,19 @@
 
 //下列的文件名是预设好的，可以直接使用
 
-//crash信息的文件名，路径为Documents/crash.txt
+//崩溃信息的文件名，路径为Documents/crash.txt
 static NSString *crashFilename = @"crash.txt";
 
-//debug信息的文件名，路径为Documents/debug.txt
+//调试信息的文件名，路径为Documents/debug.txt
 static NSString *debugFilename = @"debug.txt";
 
-//error信息的文件名，路径为Documents/error.txt
+//错误信息的文件名，路径为Documents/error.txt
 static NSString *errorFilename = @"error.txt";
 
-//release信息的文件名，路径为Documents/release.txt
+//发布信息的文件名，路径为Documents/release.txt
 static NSString *releaseFilename = @"release.txt";
 
-//info信息的文件名，路径为Documents/info.txt
+//一般信息的文件名，路径为Documents/info.txt
 static NSString *infoFilename = @"info.txt";
 
 

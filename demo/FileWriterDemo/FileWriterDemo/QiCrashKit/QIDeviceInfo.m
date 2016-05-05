@@ -60,6 +60,7 @@ NSString *p_machineModelName() {
                               @"iPhone7,2" : @"iPhone6",
                               @"iPhone8,1" : @"iPhone6s",
                               @"iPhone8,2" : @"iPhone6sPlus",
+                              @"iPhone8,4" : @"iPhoneSe",
                               
                               @"iPad1,1" : @"iPad1",
                               @"iPad2,1" : @"iPad2(WiFi)",

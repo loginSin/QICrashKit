@@ -17,7 +17,7 @@ static NSString *errorDeviceKey         = @"errorDevice";//error信息的设备�
 
 /**
  *  error信息收集类，主要针对服务器返回给客户端的错误码
- *  error信息没办法自动获取，只能用户在必要的时候添加，这样才能正常的记录error信息，数据写在Documents/error.txt
+ *  error信息没办法自动获取，只能用户在必要的时候添加，这样才能正常的记录error信息
  */
 @interface QIErrorHandler : NSObject
 

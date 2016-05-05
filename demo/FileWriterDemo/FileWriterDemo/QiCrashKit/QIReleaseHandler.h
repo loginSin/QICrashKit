@@ -16,7 +16,7 @@ static NSString *releaseDeviceKey           = @"releaseDevice";//release信息�
 
 /**
  *  release信息收集类，主要针对服务器返回给客户端的错误码
- *  release信息没办法自动获取，只能用户在必要的时候添加，这样才能正常的记录release信息，数据写在Documents/release.txt
+ *  release信息没办法自动获取，只能用户在必要的时候添加，这样才能正常的记录release信息
  */
 @interface QIReleaseHandler : NSObject
 
